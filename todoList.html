@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="todoList.css">
+</head>
+
+<body>
+    <div>
+        <div class="main-container">
+            <div class="title-container">
+                <img src="./task.png" alt="icon" class="image" />
+                <h1 class="title">Todo List</h1>
+            </div>
+            <form id="todoInput">
+                <label for="task" class="label">Task title</label>
+                <br />
+                <input id="task" type="text" placeholder="Enter task title" class="input" />
+                <hr class="line" />
+                <label for="prior" class="label">Priority</label>
+                <br />
+                <select class="input">
+                    <option>Medium</option>
+                    <option>High</option>
+                    <option>Low</option>
+                </select>
+                <hr class="line" />
+                <label for="task" class="label">Deadline</label>
+                <br />
+                <input id="date" type="date" class="input" />
+                <hr class="line" />
+                <div class="btn-container">
+                    <button type="submit" class="btn">+ Add task</button>
+                </div>
+            </form>
+            <div class="todo-container">
+                <div class="todo-heading">
+                    <div>
+                    <label for="status" class="label">Status</label>
+                    <select class="input">
+                        <option>All</option>
+                        <option>pending</option>
+                        <option>completed</option>
+                    </select>
+                    </div>
+                    <div>
+                    <label for="priority" class="label">Priority</label>
+                    <select class="input">
+                        <option>All</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                        <option>Low</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="todo-box">
+                    <div class="todo-item">
+                        <div class="todo-info">
+                            <h3 class="todo-title">Task 1</h3>
+                            <p class="todo-priority">Priority: High</p>
+                            <p class="todo-deadline">Deadline: 2023-10-10</p>
+                        </div>
+                        <div class="todo-actions">
+                            <button class="btn">Edit</button>
+                            <button class="btn">Delete</button>
+                        </div>
+                    </div>
+                    <div class="todo-item">
+                        <div class="todo-info">
+                            <h3 class="todo-title">Task 2</h3>
+                            <p class="todo-priority">Priority: Low</p>
+                            <p class="todo-deadline">Deadline: 2020-1-1</p>
+                        </div>
+                        <div class="todo-actions">
+                            <button class="btn">Edit</button>
+                            <button class="btn">Delete</button>
+                        </div>
+                    </div>
+                    <div class="todo-item">
+                        <div class="todo-info">
+                            <h3 class="todo-title">Task 3</h3>
+                            <p class="todo-priority">Priority: Medium</p>
+                            <p class="todo-deadline">Deadline: 2024-10-5</p>
+                        </div>
+                        <div class="todo-actions">
+                            <button class="btn">Edit</button>
+                            <button class="btn">Delete</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
